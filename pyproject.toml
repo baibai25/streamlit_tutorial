@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "streamlit-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["baibai25 <kamuy.camel.0225@gmail.com>"]
+readme = "README.md"
+packages = [{include = "streamlit_tutorial"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<3.13"
+ipykernel = "^6.25.2"
+streamlit = "^1.27.2"
+pandas = "^2.1.1"
+numpy = "^1.26.1"
+scikit-learn = "^1.3.1"
+python-dotenv = "^1.0.0"
+ngrok = "^0.12.0"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+mypy = "^1.6.1"
+flake8 = "^6.1.0"
+black = "^23.10.0"
+nbqa = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
